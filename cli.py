@@ -9,33 +9,33 @@ try:
     from .extractor import ExtractError, extract_conversation_state
     from .fetcher import FetchError, fetch_html
     from .rebuilder import RebuildError, rebuild_messages
-    from .compiler import CompileError, compile_context, generate_markdown_snapshot
+    from .archive_builder import ArchiveBuildError, build_archive_from_file
 except ImportError:  # Allows `python3 chat_distiller/cli.py ...` from repo root or package dir
     _pkg_parent = Path(__file__).resolve().parent.parent
     sys.path.insert(0, str(_pkg_parent))
     from chat_distiller.extractor import ExtractError, extract_conversation_state
     from chat_distiller.fetcher import FetchError, fetch_html
     from chat_distiller.rebuilder import RebuildError, rebuild_messages
-    from chat_distiller.compiler import CompileError, compile_context, generate_markdown_snapshot
+    from chat_distiller.archive_builder import ArchiveBuildError, build_archive_from_file
 
 
 def _parse_args(argv: list[str]) -> argparse.Namespace:
     p = argparse.ArgumentParser(prog="chat_distiller")
-    p.add_argument("--url", required=True, help="Public ChatGPT share link")
+    p.add_argument("--url", required=False, help="Public ChatGPT share link")
+    p.add_argument(
+        "--input",
+        default=None,
+        help="Input normalized messages JSON (required with --archive)",
+    )
     p.add_argument(
         "--output",
         default="messages.json",
         help="Output JSON file (default: messages.json)",
     )
     p.add_argument(
-        "--extract-context",
+        "--archive",
         action="store_true",
-        help="Extract structured technical context using Gemini (Phase 2)",
-    )
-    p.add_argument(
-        "--markdown",
-        action="store_true",
-        help="When used with --extract-context, output Markdown snapshot (Phase 3)",
+        help="Build deterministic conversation archive JSON (Phase 2)",
     )
     p.add_argument(
         "--tail",
@@ -53,6 +53,22 @@ def _parse_args(argv: list[str]) -> argparse.Namespace:
 
 def main(argv: list[str] | None = None) -> int:
     args = _parse_args(sys.argv[1:] if argv is None else argv)
+
+    if args.archive:
+        if not args.input:
+            print("--archive requires --input <messages.json>", file=sys.stderr)
+            return 2
+        try:
+            build_archive_from_file(Path(args.input), Path(args.output))
+        except ArchiveBuildError as e:
+            print(str(e), file=sys.stderr)
+            return 6
+        print(f"Wrote archive JSON to {Path(args.output)}")
+        return 0
+
+    if not args.url:
+        print("--url is required unless --archive is used", file=sys.stderr)
+        return 2
 
     try:
         html = fetch_html(args.url)
@@ -87,46 +103,6 @@ def main(argv: list[str] | None = None) -> int:
             messages = []
         else:
             messages = messages[-args.tail :]
-
-    if args.markdown and not args.extract_context:
-        print("--markdown requires --extract-context", file=sys.stderr)
-        return 2
-
-    if args.extract_context:
-        try:
-            structured = compile_context(messages)
-        except CompileError as e:
-            print(str(e), file=sys.stderr)
-            return 6
-
-        if args.markdown:
-            out_path = Path(args.output)
-            if args.output == "messages.json":
-                out_path = Path("snapshot.md")
-            try:
-                md = generate_markdown_snapshot(structured)
-            except Exception as e:
-                print(f"Failed to generate markdown: {e}", file=sys.stderr)
-                return 7
-            try:
-                out_path.write_text(md, encoding="utf-8")
-            except OSError as e:
-                print(f"Failed to write markdown: {e}", file=sys.stderr)
-                return 5
-            print(f"Wrote markdown snapshot to {out_path}")
-            return 0
-
-        out_path = Path(args.output)
-        try:
-            out_path.write_text(
-                json.dumps(structured, ensure_ascii=False, indent=2) + "\n",
-                encoding="utf-8",
-            )
-        except OSError as e:
-            print(f"Failed to write output JSON: {e}", file=sys.stderr)
-            return 5
-        print(f"Wrote structured context JSON to {out_path}")
-        return 0
 
     out_path = Path(args.output)
     try:

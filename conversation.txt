@@ -1,0 +1,1363 @@
+[USER]
+Disini saya memiliki file pdf yang berisikan sebuah blog.
+Sekarang saya ingin rewrite blog tersebut menjadi caption untuk saya bisa post ke Linkedin.
+Buat dalam bahasa inggris dan buat agar semirip mungkin ditulis oleh manusia, dan jangan buat itu formal. Buat seperti bahasa sehari-hari tapi jelas dan profesional
+Dan saya ingin menaruh image nya di postingan linkedin jadi cantumkan penjelasan yang mengarah ke image nya.
+
+[ASSISTANT]
+Sip, jelas 👍  
+Aku sudah baca isi blog PDF-nya. Di bawah ini aku rewrite jadi **LinkedIn caption** dalam **bahasa Inggris**, gaya **manusia banget**, **nggak formal**, tapi tetap **jelas & profesional**. Aku juga **sengaja mengarahkan ke image** yang bisa kamu taruh di postingan.
+
+---
+
+### LinkedIn Caption Draft
+
+Lately I’ve been thinking a lot about *vibe coding* — you know, when we mostly talk to an AI and let it write the code for us.
+
+At first, it feels amazing. Faster output, less friction, fewer docs to read.  
+But zoom out a bit, and things start to feel… off.
+
+When developers stop visiting project docs, stop opening issues, stop engaging with maintainers — open source slowly loses its feedback loop. Libraries don’t get better. Communities get quieter. And new OSS projects? Much harder to survive.
+
+The real problem isn’t “AI writes code”.  
+It’s when developers turn into *consumers* instead of *participants*.
+
+LLMs don’t report bugs.  
+They don’t join discussions.  
+They don’t understand trade-offs — they just remix what was most common in their training data.
+
+👉 *The image here represents that shift*: developers standing one step away from the ecosystem, with AI sitting in between. Productive on the surface, disconnected underneath.
+
+I’m not anti-AI. I use it daily.  
+But if AI becomes the only interface we have with open source, we’re quietly starving the ecosystem that made all of this possible in the first place.
+
+Curious how others are navigating this balance.  
+Using AI — without losing the “engineering” part of software engineering.
+
+---
+
+Kalau kamu mau, aku bisa:
+- bikin versi **lebih pendek** (biar punchy di feed)
+- tambahin **call-to-action yang lebih tajam**
+- atau **sesuaikan sama personal branding kamu** (misalnya sebagai FE/BE/Tech Lead)
+
+Tinggal bilang 👍
+
+[USER]
+Sekarang saya ingin Anda membuat caption post untuk blog dibawah iniL
+
+```md
+# **Laravel: Why It’s Perfect**
+
+Laravel has quickly become one of the most beloved PHP frameworks in the world, and for good reason! Whether you are a newcomer to web development, or a seasoned programmer looking to create complex systems, Laravel provides a powerful and simple solution for bringing your ideas into reality.
+
+I am working with Laravel framework for more than 10 years, and watches it grow from a very promising tool in the PHP ecosystem to the robust, production-grade framework that is loved by developers across the globe. From personal projects to large-scale, multi-tenant applications, the Laravel framework has consistently shown itself to be a joy to use, scalable, and reliable.
+
+Today, with the latest version of the framework being Laravel 12, the framework is continuing to push the boundaries of what is possible in terms of performance, developer experience, and modern best practices. The framework is no longer afraid to make changes, but they feel more like upgrades than breaking changes, allowing developers to move forward with confidence, not fear.
+
+When I first started using the Laravel framework, I was amazed not only by the numerous wonderful features of the framework but also by the experience of using the framework. Everything, including the documentation, code, community, and tools, seemed to have been designed with the intention of providing developers with a smooth, enjoyable experience instead of a stressful one.
+
+### **Clean and Readable Code**
+
+The syntax of Laravel is very elegant and expressive. It enables you to write code in a natural and intuitive way. This makes your code bases very easy to maintain, especially when working on a team or when revisiting your own code after several months.
+
+Rather than struggling with complex file organization and confusing conventions, Laravel promotes best practices such as MVC organization, routing, and a clean separation of concerns.
+
+### **Faster Development, Better Results**
+
+Laravel is designed to help developers save time. With tools such as Artisan, a command-line interface, developers can create models, controllers, and migrations quickly and easily.
+
+Eloquent is an Object Relational Mapping system that makes database interaction easy and straightforward.
+
+Blade is a templating engine for the frontend side of things.
+
+All this means is that developers can spend more time building features and solving real-world problems, and less time typing repetitive code.
+
+### **Security You Can Rely On**
+
+In other words, security is at the core of Laravel, not an afterthought. It comes with built-in protection for many types of attacks, such as SQL injection, CSRF, and cross-site scripting. It also provides secure authentication mechanisms and secure password hashing.
+
+This allows developers to have confidence in their application’s safety from these most common types of attacks.
+
+### **A Powerful Ecosystem**
+
+Laravel is more than a framework; it is a whole ecosystem of tools that work in harmony. For authentication, billing, queue management, deployment, etc., Laravel provides official solutions that can be easily integrated into your workflow.
+
+This eliminates the need for random third-party libraries, keeping your application stable and well-maintained.
+
+### **Scales With Your Ideas**
+
+Whether you’re building a simple blog, business site, or full-fledged SaaS application, Laravel will grow with you. You can start simple and add features, optimizations, and sophisticated architecture as your user base grows.
+
+### **Final Thoughts**
+
+Laravel is not only about coding PHP; it is about coding better applications with confidence and clarity. It is a great fit for developers who care about productivity and quality.
+
+This blog is the starting point of my journey to share with you what I learn, create, and explore in the web development space. If you are passionate about coding meaningful applications, then Laravel is a great place to begin.
+
+Thank you for reading, and welcome to the journey! 🚀
+```
+
+Buatkan caption nya itu lebih punchy, tambahin call-to-action yang tajam.
+Dan pastikan caption yang dibuat itu tidak membuat saya itu pencinta Laravel agar terlihat netral.
+
+[ASSISTANT]
+Siap. Ini versi **LinkedIn caption** yang **lebih punchy**, **netral (bukan fanboy Laravel)**, bahasanya **sehari-hari tapi profesional**, dan punya **call-to-action yang tajam**.
+
+---
+
+### LinkedIn Caption
+
+Laravel often gets labeled as “the nice PHP framework”.  
+But after spending years building real systems, I think that description is too shallow.
+
+What makes Laravel interesting isn’t hype or convenience alone — it’s how intentionally it’s designed for *long-term development*. Clean structure, readable code, strong defaults, and an ecosystem that actually reduces chaos instead of adding more tools to manage.
+
+Over the years, I’ve seen frameworks optimize for speed at the cost of clarity. Laravel quietly does the opposite:  
+it helps you move fast **without** making future you hate present you.
+
+Not perfect. Not magic.  
+But consistently practical — from small projects to systems that actually need to scale.
+
+I wrote this blog to break down *why* Laravel works the way it does, beyond the usual “DX is great” talking points.
+
+👉 If you’re building web apps and care about maintainability, trade-offs, and real-world architecture — give it a read.  
+👉 If you disagree, even better. Let’s talk about it in the comments.
+
+Curious: what do you value more in a framework — speed today, or clarity six months from now?
+
+---
+
+Kalau mau, aku bisa:
+- bikin versi **lebih pendek & lebih tajam lagi**
+- sesuaikan dengan **persona kamu (engineer / tech lead / content creator)**
+- atau tambahin **hook 1–2 baris pertama biar lebih stop-the-scroll**
+
+Tinggal bilang.
+
+[USER]
+Sekarang buatkan caption post linkedin untuk blog dibawah ini:
+
+```md
+# **The Future of the Software Engineering Career**
+
+A few weeks ago, I wrote about [the human in the loop](https://blog.platformatic.dev/the-human-in-the-loop?utm_source=nodeland&utm_medium=email&utm_campaign=the-future-of-the-software-engineering-career) and why review is now the bottleneck in software development. That post triggered a lot of conversations, and one question kept coming up: What does this mean for someone starting their career today?
+
+If you're a student, a career changer, or someone advising young people on their path into tech, this post is for you.
+
+## Fundamentals Matter Again
+
+For the past decade, the industry focused on rapid delivery to employment. Learn React in twelve weeks. Build a portfolio. Get hired. Figure out the rest on the job.
+
+That worked when companies needed bodies to type code. When the bottleneck was implementation speed, you could learn just enough to be useful and pick up the deeper knowledge later.
+
+That world is gone.
+
+When AI can implement features faster than any junior developer, what becomes valuable is the judgment to know whether the implementation is correct. And judgment requires understanding.
+
+Algorithms. Distributed systems. Hardware architectures. Cache management techniques. Networking fundamentals. Database internals. These aren't academic exercises anymore. They're the foundation for evaluating AI-generated code.
+
+When an AI produces a sorting algorithm, can you tell if it's appropriate for your data properties? When it suggests a caching layer, do you understand the trade-offs in consistency? When it generates a distributed system design, can you spot the failure modes?
+
+There are endless layers to study here. Computer science fundamentals that seemed theoretical suddenly matter for practical work. The student who deeply understands how things work will outperform the one who only knows how to use them.
+
+## The Bootcamp Path Is Closing
+
+I want to be direct about this because I think a lot of people are going to get hurt if we don't talk about it honestly.
+
+The bootcamp model worked because it was a pipeline into "training on the job" positions. You'd learn enough to be productive on day one, and companies would invest in developing you further. Junior developer roles were abundant. The expectation was that you'd learn the missing skills over the years of professional practice.
+
+Those junior roles are disappearing. Not slowly. Rapidly.
+
+I can now have an AI agent do the work that used to be assigned to junior developers. Bug fixes, simple features, routine maintenance. The economics don't make sense anymore. Why hire someone who needs training when you can have a senior engineer with AI tools doing ten times the work?
+
+This isn't a prediction. It's already happening. Look at hiring data. Look at the job boards. The entry-level positions that bootcamps prepared people for are evaporating.
+
+I'm not saying bootcamps were bad or that the people who went through them lack value. Many excellent engineers came through that path. But the path itself is closing. The on-ramp that assumed companies would provide years of on-the-job training no longer exists in the same way.
+
+## Internships Become Critical
+
+So, how do you develop judgment if companies aren't hiring juniors for training?
+
+Internships. And they're about to become more important than ever.
+
+An internship is the new apprenticeship. It's the place where you learn what can't be taught in a classroom or a bootcamp: how to evaluate whether something is actually correct, how to think about edge cases, how to understand system operation under stress, how to make tradeoffs.
+
+Judgment isn't learned from tutorials. It's learned from watching things break. From shipping something that appeared to be right and discovering why it wasn't. From working alongside people who have that judgment and internalizing their mental models.
+
+If I were advising a student today, I would tell them: optimize for internships. Take the one at the smaller company where you'll work closely with senior engineers, over the one at the big company where you'll be one of hundreds of interns. Prioritize learning judgment over resume prestige.
+
+Some big companies are the exception. Cloudflare has an amazing internship program where interns actually ship real features to production. That's the kind of experience that builds judgment. But it's the exception, not the rule. Most large company internships are structured experiences that don't expose you to the real complexity of production systems.
+
+The students who graduate with real internship experience, who have actually worked on production systems and learned from their failures, will have a massive advantage over those who only have coursework and side projects.
+
+## A New Industry Is Emerging
+
+Here's the part that I'm really thrilled about.
+
+For decades, custom software was only for big companies. If you were a small business, a local shop, a restaurant, or a tradesperson, you couldn't afford custom software. You used whatever off-the-shelf product was available and worked around its limitations. Or you used nothing at all.
+
+That's about to change completely.
+
+Think about what AI-assisted engineering (or "vibe coding" if you want to call it that) actually enables. A competent developer can now build custom software in hours that would have taken weeks or months. The economics of custom software just fundamentally shifted.
+
+I see a new industry emerging: the local software development agency. Small operations, maybe even individual practitioners, who serve small businesses in their community. The plumber for software.
+
+Does your local restaurant need a custom reservation system that integrates with their specific workflow? Call the local developer. The auto shop wants inventory management that works the way they actually work? There's someone in town who can build that. Does the accountant's office need a client portal? It's now affordable to have one built specifically for them.
+
+This is like the early days of web development. Remember when every business needed a website, and local web developers built them? We're about to see the same thing, but for custom software applications.
+
+Think of all the WordPress and Joomla customizations that small businesses relied on. Now extend that to actual custom applications, workflows, and solutions to problems that no SaaS product tackles because the market is too small.
+
+This is going to be a booming industry. And it favors people who can talk to clients, understand their real problems, and deliver working solutions. It favors generalists who can move quickly over specialists in narrow technologies. It favors judgment over raw coding speed.
+
+## What This Means
+
+If you're a student: invest deeply in fundamentals. Pursue internships aggressively. Build judgment, not just skills.
+
+If you're considering a career change, understand that the easy on-ramp is closing. The bar for entry is rising. That doesn't mean it's impossible, but it means you need a realistic plan that doesn't depend on "training on the job" positions that may not exist.
+
+If you're already a developer, the opportunity is enormous. The ability to deliver custom software to markets that couldn't previously afford it is a generational shift. Position yourself for it.
+
+The human in the loop isn't going away. If anything, the human becomes more important as the tools become more powerful. But which humans, doing what work, for whom? That's what's changing.
+
+The future belongs to those who can apply judgment. Start building yours now.
+```
+
+Buat agar punchy, call-to-action yang menarik tapi tidak terlalu mencolok, buat agar netral agar saya tidak terlihat seperti sok tau padahal saya juga masih belum pro.
+Tambahin juga hook 1-2 baris pertama biar lebih stop-the-scroll.
+
+[ASSISTANT]
+Siap. Ini **LinkedIn caption** yang **punchy**, **netral**, nggak sok tahu, dengan **hook stop-the-scroll**, dan **CTA yang halus tapi ngena**.
+
+---
+
+### LinkedIn Caption
+
+AI didn’t kill software engineering.  
+It changed *what matters*.
+
+For years, the shortcut into tech was clear: learn a framework, ship something fast, get hired, learn the rest later. That path worked when writing code was the bottleneck.
+
+It isn’t anymore.
+
+When AI can implement features faster than a junior dev, the real value shifts to something harder to automate: **judgment**. Knowing when code is wrong, risky, or simply the wrong solution.
+
+This blog isn’t about fear or hype.  
+It’s about what actually becomes important next:
+- fundamentals that help you evaluate AI output  
+- internships as the new apprenticeship  
+- and a growing space for engineers who can build *practical software* for real businesses, not just big tech
+
+I’m still learning myself, but writing this helped me clarify where the industry seems to be heading — especially for students, career switchers, and early-career engineers.
+
+👉 If you’re thinking about a future in software, this might help you ask better questions.  
+👉 If you see it differently, I’d genuinely love to hear your take.
+
+The tools are getting smarter.  
+The bar for humans is changing — not disappearing.
+
+---
+
+Kalau kamu mau:
+- versi **lebih pendek & lebih “opinionated”**
+- versi **lebih humble / reflective**
+- atau versi yang **fokus ke students vs professionals**
+
+tinggal bilang, kita tune bareng.
+
+[USER]
+Buat ulang tapi jangan dengan template yang sama terus menerus dengan caption sebelumnya, saya juga ingin agar diawali dengan kalau saya itu baru saja berpikir dan ucapkan selamat malam karena akan saya posting pada malam hari.
+Dan buat agar lebih terlihat seperti tidak ditulis oleh AI
+
+[ASSISTANT]
+Siap. Aku ganti **struktur + rhythm-nya**, lebih reflektif, lebih “malam hari”, dan terasa kayak orang lagi mikir sambil ngetik — bukan AI yang lagi nge-post.
+
+---
+
+### LinkedIn Caption
+
+Good evening 👋  
+I was just thinking about where software engineering careers are actually heading — and honestly, the answer feels very different from a few years ago.
+
+Not long ago, the path felt straightforward. Learn a stack, ship fast, get a junior role, grow on the job. That made sense when writing code was the hardest part.
+
+Now? The tools write code faster than most of us.
+
+What seems to matter more isn’t *how fast* you can build, but whether you can tell if something is correct, safe, or even the right solution in the first place. That pulled my attention back to things we used to call “the basics” — systems, trade-offs, and understanding how things break in the real world.
+
+This blog is me thinking out loud about:
+- why fundamentals are becoming relevant again  
+- why internships may matter more than titles or bootcamp certificates  
+- and why there’s a growing opportunity outside big tech, building real software for real businesses
+
+I don’t have all the answers (far from it).  
+But I think these are questions worth sitting with, especially if you’re early in your career or considering a switch.
+
+If you’re thinking about the same things, feel free to read it.  
+And if you see a different future than I do, I’d genuinely like to hear your perspective.
+
+Have a good night 🌙
+
+[USER]
+Sekarang buatkan caption linkedin untuk blog dibawah ini:
+
+```md
+Right now, the popular Silicon Valley narrative is that companies won’t need large teams of real programmers anymore. But outside that bubble, many people working in real teams don’t see it that way at all.
+
+**David Heinemeier Hansson, the creator of Ruby on Rails, believes AI is not as good as most junior programmers for coding, at least as of right now.**
+
+# **Why DHH Thinks AI is Not That Worthy?**
+
+David Heinemeier Hansson, also known as DHH, built Ruby on Rails, one of the most influential web frameworks. He still writes code and deals with the messy realities of production. So, when he talks about coding, he is speaking from hands-on experience, not hype.
+
+In the Next Token podcast, David discussed the uncertain impact of AI on the tech landscape.
+
+He compared current AI tools to a “flickering” light bulb, something that sometimes gives a useful glimpse but often leaves developers in the dark:
+
+> “
+> 
+> 
+> *But just right now, I am not seeing it. And part of the reason is I am literally looking every day. I am asking AI all the time, can you write this piece of code for me? And it does. And I go like, well, I don't like that. I wouldn't even maintain that.*
+> 
+
+> *I don't feel like you have done as good as a job as most junior programmers have had to deal with.And then occasionally I will get the other answer, right? I will ask it for something, and I go like, how did it know? How could it just piece it all together? It's truly remarkable.*
+> 
+
+> *I feel like it's a little bit like a flickering light bulb. You are in total darkness, and then it will flicker on, and you go like, I can see everything. And then two seconds later, boom, pitch black. If you can make that light bulb stable and shine all the time, clearly that's amazing for humanity*
+> 
+
+Sounds like he is trying to explain his frustration with AI.
+
+But his skepticism isn’t ideological but practical. He is judging AI based on what it can do right now, not what it might do someday.
+
+**In David’s experience, while the AI usually provides a code that works, the problem is the quality. It’s poorly structured or hard to maintain.  In real software teams, code is about whether someone else can understand it, fix it, and safely build on it later.**
+
+There are times when AI absolutely nails it. He asked a question and got a response so good that it feels almost magical. That’s the moment where people get excited and start believing AI is already super capable. But those moments don’t last. That’s why he uses the flickering light bulb metaphor.
+
+The inconsistency is the real issue.
+
+If AI could produce high-quality results consistently, it would truly change everything. Until then, David sees AI as impressive, but not ready to replace human developers.
+
+In recent years, major industry voices have suggested that AI tools could dramatically reduce the need for human programmers.
+
+One of the first victims of this trend is the freshers. [2026’s software engineering job market](https://www.finalroundai.com/blog/software-engineering-job-market-2026) will have fewer entry-level coding job openings.
+
+But he directly challenges this popular pitch that companies can fire the programmers and still go faster.
+
+Even the AWS CEO, Matt Garman, thinks the same. [Garman said replacing junior developers with AI](https://www.finalroundai.com/blog/aws-ceo-ai-cannot-replace-junior-developers) is “*one of the dumbest things*” companies can do.
+
+His reasoning is just a little different. He argues junior developers are essential because they grow into senior engineers later, and they already know how to work with AI coding tools today. If companies stop hiring juniors, they create a skills vacuum for the future.
+
+So, AI replacing junior developers sounds convincing on paper, but falls apart in practice.
+
+People think software work is just typing code.
+
+But most of the real effort goes into understanding the problem, designing systems, working with existing code, and dealing with constant changes over time.
+
+**That’s exactly where AI struggles today. It can spit out code, but it doesn’t truly understand the system it’s working in or how future changes will affect it.**
+
+Junior developers, on the other hand, learn those skills by working with real codebases. They may write imperfect code, but they understand why things were built a certain way.
+
+Companies need to remember that software isn’t a one-time task. It evolves. And systems built on code “that somewhat works” tend to collapse over time.
+
+David’s point is also that reliability matters more than demos. If a tool is great most of the time but silently wrong some time as well, you start spending time double-checking everything.
+
+That’s the hidden cost of code written by the AI coding tools. The debugging and risk management fall back onto humans.
+
+Even a [recent study](https://arxiv.org/abs/2510.10165) suggests that while AI assistance can boost output, it can also increase the burden on experienced developers who must review and fix AI-generated code. David’s take lines up with that finding.
+
+# **In his company, Humans wrote 95% of a new product’s code**
+
+**Hansson also said that at his company, 37signals, humans wrote 95% of the code for the new product called Fizzy.**
+
+The team tried AI-powered features, but those experiments were not realized in the final work.
+
+This 95% number directly contradicts the idea that serious teams are already letting AI do most of the work. That’s why he is amazed by how much economic confidence is riding on AI’s assumed ability to replace humans.
+
+While every developer at his company uses it in some form, AI is not writing large features. For a complex task, AI is not helpful for them. It actually slows him down. It can help with quick ideas, but for real production work, humans are still faster and better right now.
+
+Hansson says he personally continues to write most of his own code. He compared his work to a craftsman enjoying the beauty of fine stitching :
+
+> “
+> 
+> 
+> *I still care about how code looks. I still care about the beauty of it. I care about finessing it.*
+> 
+
+> *And that's a luxury that perhaps is akin to what a modern saddle maker enjoys, where the letters are just right, and the stitching is just right, and you are like, okay, but you are no longer part of the main production for transportation.*
+> 
+
+> *And I'm like, well, so what, I will continue to make my handwritten code saddles as long as I can for my enjoyment.*
+> 
+
+He values both the craft and the precision of manual coding.
+
+Even he shared one moment where the “Vibe Coding” made him pause and question:  *Is this actually making me better?*
+
+He caught himself asking AI how to write a basic *if* condition, something he absolutely knows how to do. But he had slowly outsourced that thinking to AI, and now his brain wasn’t reaching for the answer first.
+
+That’s where the doubt kicks in.
+
+AI feels helpful, but it may be weakening core skills. He brought up the fact that some math teachers believed that because of calculators, students didn’t need to memorize times tables anymore. But we now know that’s wrong.
+
+In the same way, if developers stop internalizing basic logic because AI always fills in the gaps, they risk losing intuition.
+
+# **Bottom Line**
+
+Despite his skepticism, Hansson doesn’t think that AI is useless. He points to impressive examples, such as Shopify’s AI tool SiteKick, which helps merchants set up their online stores. In such ways, AI can provide real value when applied to specific tasks.
+
+But when it comes to coding, AI can code, but humans are still needed to understand the system end-to-end, spotting edge cases, debugging, and making final product decisions.
+
+That’s basically what junior developers are trained to grow into. While generative AI can produce snippets or boilerplate code, it still lacks the consistency and reliability of even relatively inexperienced junior devs.
+
+This somewhat lines up with [Nvidia CEO Jensen Huang's thoughts about coding jobs](https://www.finalroundai.com/blog/nvidia-ceo-software-engineer-coding-jobs-purpose). He argues that writing code isn’t the real purpose of software engineers, but it’s just a task that AI can increasingly handle, while the real job is solving problems. At least, they agree that humans still matter.
+
+So, until AI stops “flickering,” the software world will be run by the people who can verify, integrate, and take responsibility for what ships.
+```
+
+Buat agar lebih original agar seperti saya yang tulis, pastikan data-data valid itu jangan diubah agar tidak terjadi kesalahpahaman.
+Tidak perlu buatkan call-to-action karena saya ingin postingan ini lebih ke arah untuk informasi saja.
+Buat se manusia mungkin
+
+[ASSISTANT]
+Good evening.
+
+Lately I’ve been noticing how strong the Silicon Valley narrative has become:  
+“AI will replace large teams of programmers.”
+
+But when you listen to people who are still deep in real production systems every day, the tone feels very different.
+
+David Heinemeier Hansson (DHH), the creator of Ruby on Rails, recently shared his view — and it’s far from the hype. He said that, as of right now, AI isn’t as good as most junior programmers when it comes to writing maintainable code.
+
+What stood out to me wasn’t that he dislikes AI. He clearly doesn’t. He uses it. He tests it. He asks it to write code daily.
+
+But his experience feels… inconsistent.
+
+Sometimes AI produces something surprisingly good. Almost magical.  
+Other times, it generates code that works — but is structured in a way he wouldn’t want to maintain.
+
+He described it as a *“flickering light bulb.”*  
+Brief moments of clarity, followed by darkness again.
+
+And that metaphor captures something important:  
+In real teams, consistency matters more than impressive demos.
+
+Working code isn’t enough.  
+It has to be readable. Maintainable. Understandable by the next person. Safe to extend six months later.
+
+Interestingly, this perspective isn’t isolated.
+
+AWS CEO Matt Garman has also said that replacing junior developers with AI would be “one of the dumbest things” companies could do — partly because juniors grow into seniors, and removing them creates a long-term skills vacuum.
+
+DHH shared that at 37signals, humans wrote 95% of the code for their new product, Fizzy. AI tools were tried, but they didn’t end up driving the final implementation. That alone challenges the assumption that serious engineering teams are already letting AI handle most of the work.
+
+There’s also a subtle concern he raised that I think is worth reflecting on.
+
+He caught himself asking AI how to write a simple `if` condition — something he obviously knows. Not because he forgot, but because the habit of outsourcing thinking had started forming.
+
+That’s the uncomfortable part.
+
+AI can absolutely help. In specific contexts — like Shopify’s SiteKick — it delivers real value. But when it comes to end-to-end system understanding, trade-offs, debugging under pressure, and long-term architecture decisions, humans are still carrying the weight.
+
+Even recent research suggests that while AI can increase output, it also increases the review burden on experienced developers. The cost doesn’t disappear — it shifts.
+
+Maybe that’s the more grounded way to see it.
+
+AI can generate code.  
+Humans still need to verify, integrate, and take responsibility for what ships.
+
+Until that “light bulb” stops flickering, reliability will continue to matter more than raw generation speed.
+
+And in production systems, reliability always wins.
+
+[USER]
+Sekarang saya ingin Anda membuat caption linkedin untuk blog dibawah ini
+
+```md
+# **Bun v1.3.9**
+
+---
+
+**To install Bun**
+
+curl
+
+npm
+
+powershell
+
+scoop
+
+brew
+
+docker
+
+`curl -fsSL https://bun.sh/install | bash`
+
+### **To upgrade Bun**
+
+`bun upgrade`
+
+## [**`bun run --parallel` and `bun run --sequential`**](https://bun.com/blog/bun-v1.3.9?ref=dailydev#bun-run-parallel-and-bun-run-sequential)
+
+Run multiple package.json scripts concurrently or sequentially with Foreman-style prefixed output. Includes full `--filter` and `--workspaces` integration for running scripts in parallel or sequential across workspace packages.
+
+`# Run "build" and "test" concurrently from the current package.json
+bun run --parallel build test
+
+# Run "build" and "test" sequentially with prefixed output
+bun run --sequential build test
+
+# Glob-matched script names
+bun run --parallel "build:*"
+
+# Run "build" in all workspace packages concurrently
+bun run --parallel --filter '*' build
+
+# Run "build" in all workspace packages sequentially
+bun run --sequential --workspaces build
+
+# Multiple scripts across all packages
+bun run --parallel --filter '*' build lint test
+
+# Continue running even if one package fails
+bun run --parallel --no-exit-on-error --filter '*' test
+
+# Skip packages missing the script
+bun run --parallel --workspaces --if-present build`
+
+Each line of output is prefixed with a colored, padded label so you can tell which script produced it:
+
+`build | compiling...
+test  | running suite...
+lint  | checking files...`
+
+When combined with `--filter` or `--workspaces`, labels include the package name:
+
+`pkg-a:build | compiling...
+pkg-b:build | compiling...`
+
+- **`-parallel`** starts all scripts immediately with interleaved, prefixed output. **`-sequential`** runs scripts one at a time in order. By default, a failure in any script kills all remaining scripts — use `-no-exit-on-error` to let them all finish.
+
+Pre/post scripts (`prebuild`/`postbuild`) are automatically grouped with their main script and run in the correct dependency order within each group.
+
+### [**How is this different from `-filter?`**](https://bun.com/blog/bun-v1.3.9?ref=dailydev#how-is-this-different-from-filter)
+
+`bun --filter="pkg" <script>` respects dependency order. It doesn't start a script until all it's dependendents are also run. This can be an issue when using long-lived watch-like scripts. `--parallel` and `--sequential` do not respect dependency order so they won't wait.
+
+## [**HTTP/2 Connection Upgrades via `net.Server`**](https://bun.com/blog/bun-v1.3.9?ref=dailydev#http-2-connection-upgrades-via-net-server)
+
+The `net.Server → Http2SecureServer` connection upgrade pattern now works correctly. This pattern is used by libraries like [**http2-wrapper**](https://github.com/szmarczak/http2-wrapper), [**crawlee**](https://github.com/apify/crawlee), and custom HTTP/2 proxy servers that accept raw TCP connections on a `net.Server` and forward them to an `Http2SecureServer` via `h2Server.emit('connection', rawSocket)`.
+
+`import { createServer } from "node:net";
+import { createSecureServer } from "node:http2";
+import { readFileSync } from "node:fs";
+
+const h2Server = createSecureServer({
+  key: readFileSync("key.pem"),
+  cert: readFileSync("cert.pem"),
+});
+
+h2Server.on("stream", (stream, headers) => {
+  stream.respond({ ":status": 200 });
+  stream.end("Hello over HTTP/2!");
+});
+
+const netServer = createServer((rawSocket) => {
+  // Forward the raw TCP connection to the HTTP/2 server
+  h2Server.emit("connection", rawSocket);
+});
+
+netServer.listen(8443);`
+
+## [**`Symbol.dispose` support for `mock()` and `spyOn()`**](https://bun.com/blog/bun-v1.3.9?ref=dailydev#symbol-dispose-support-for-mock-and-spyon)
+
+`mock()` and `spyOn()` now implement `Symbol.dispose`, enabling the `using` keyword to automatically restore mocks when they go out of scope. This eliminates the need to manually call `mockRestore()` or rely on `afterEach` cleanup.
+
+`import { spyOn, expect, test } from "bun:test";
+
+test("auto-restores spy", () => {
+  const obj = { method: () => "original" };
+
+  {
+    using spy = spyOn(obj, "method").mockReturnValue("mocked");
+    expect(obj.method()).toBe("mocked");
+  }
+
+  // automatically restored when `spy` leaves scope
+  expect(obj.method()).toBe("original");
+});`
+
+`[Symbol.dispose]` is aliased to `mockRestore`, so it works with both `spyOn()` and `mock()`:
+
+`import { mock } from "bun:test";
+
+const fn = mock(() => "original");
+fn();
+expect(fn).toHaveBeenCalledTimes(1);
+
+fn[Symbol.dispose](); // same as fn.mockRestore()
+expect(fn).toHaveBeenCalledTimes(0);`
+
+## [**`NO_PROXY` now respected for explicit proxy options**](https://bun.com/blog/bun-v1.3.9?ref=dailydev#no-proxy-now-respected-for-explicit-proxy-options)
+
+Previously, setting `NO_PROXY` only worked when the proxy was auto-detected from `http_proxy`/`HTTP_PROXY` environment variables. If you explicitly passed a `proxy` option to `fetch()` or `new WebSocket()`, the `NO_PROXY` environment variable was ignored.
+
+Now, `NO_PROXY` is always checked — even when a proxy is explicitly provided via the `proxy` option.
+
+`// NO_PROXY=localhost
+// Previously, this would still use the proxy. Now it correctly bypasses it.
+await fetch("http://localhost:3000/api", {
+  proxy: "http://my-proxy:8080",
+});
+
+// Same fix applies to WebSocket
+const ws = new WebSocket("ws://localhost:3000/ws", {
+  proxy: "http://my-proxy:8080",
+});`
+
+## [**`-cpu-prof-interval` flag**](https://bun.com/blog/bun-v1.3.9?ref=dailydev#cpu-prof-interval-flag)
+
+Bun now supports the `--cpu-prof-interval` flag to configure the CPU profiler's sampling interval in microseconds, matching Node.js's flag of the same name. The default interval is 1000μs (1ms).
+
+`# Sample every 500μs for higher resolution profiling
+bun --cpu-prof --cpu-prof-interval 500 index.js`
+
+If used without `--cpu-prof` or `--cpu-prof-md`, Bun will emit a warning.
+
+## [**ESM bytecode in `-compile`**](https://bun.com/blog/bun-v1.3.9?ref=dailydev#esm-bytecode-in-compile)
+
+Using `--bytecode` with `--format=esm` is now supported. Previously, this was unsupported due to missing functionality in JavaScriptCore and now it's fully supported.
+
+When `--bytecode` is used without an explicit `--format`, it continues to default to CommonJS. In a future version of Bun, we may change that default to ESM to make the behavior more consistent.
+
+Thanks to @alistair!
+
+## [**Fixed: Illegal instruction (SIGILL) crashes on ARMv8.0 aarch64 CPUs**](https://bun.com/blog/bun-v1.3.9?ref=dailydev#fixed-illegal-instruction-sigill-crashes-on-armv8-0-aarch64-cpus)
+
+Fixed crashes on older ARM64 processors (Cortex-A53, Raspberry Pi 4, AWS a1 instances) caused by mimalloc emitting LSE atomic instructions that require ARMv8.1 or later. Bun now correctly targets ARMv8.0 on Linux aarch64, using outline atomics for runtime dispatch.
+
+## [**Faster Markdown-to-HTML rendering**](https://bun.com/blog/bun-v1.3.9?ref=dailydev#faster-markdown-to-html-rendering)
+
+`Bun.Markdown` now uses SIMD-accelerated scanning to find characters that need HTML escaping (`&`, `<`, `>`, `"`), resulting in **3-15% faster** Markdown-to-HTML rendering throughput. Larger documents with fewer special characters see the biggest gains.
+
+Thanks to [**@billywhizz**](https://github.com/billywhizz) for the contribution!
+
+## [**Faster `Bun.markdown.react()`**](https://bun.com/blog/bun-v1.3.9?ref=dailydev#faster-bun-markdown-react)
+
+Cached frequently-used HTML tag strings (`div`, `p`, `h1`-`h6`, etc.) in the React renderer for `Bun.markdown.react()`, avoiding repeated string allocations on every element creation.
+
+| **Input size** | **Before** | **After** | **Improvement** |
+| --- | --- | --- | --- |
+| Small (121 chars) | 3.20 µs | 2.30 µs | **28% faster** |
+| Medium (1,039 chars) | 15.09 µs | 14.02 µs | **7% faster** |
+| Large (20,780 chars) | 288.48 µs | 267.14 µs | **7.4% faster** |
+
+String object count reduced by **40%** and heap size reduced by **6%** for a typical render.
+
+## [**Faster `AbortSignal.abort()` with no listeners**](https://bun.com/blog/bun-v1.3.9?ref=dailydev#faster-abortsignal-abort-with-no-listeners)
+
+`AbortSignal.abort()` now skips creating and dispatching an `Event` object when there are no registered listeners, avoiding unnecessary object allocation and dispatch overhead. This results in a **~6% improvement** in micro-benchmarks (~16ms saved per 1M calls).
+
+| **Case** | **Before** | **After** | **Improvement** |
+| --- | --- | --- | --- |
+| no listener | 271 ms | 255 ms | ~6% |
+| with listener | 368 ms | 370 ms | (same) |
+
+Thanks to @sosukesuzuki for the contribution!
+
+## [**JavaScriptCore upgrade**](https://bun.com/blog/bun-v1.3.9?ref=dailydev#javascriptcore-upgrade)
+
+### [**RegExp SIMD Acceleration**](https://bun.com/blog/bun-v1.3.9?ref=dailydev#regexp-simd-acceleration)
+
+Regular expressions got a major performance boost with a new SIMD-accelerated prefix search, inspired by V8's approach. When a regex has alternatives with known leading characters (e.g., `/aaaa|bbbb/`), JSC now uses SIMD instructions to scan 16 bytes at a time, rapidly rejecting non-matching positions before falling back to scalar matching. This is implemented for both ARM64 (using TBL2) and x86_64 (using PTEST), so all platforms benefit.
+
+The x86_64 codegen also gained new constant materialization primitives (`move128ToVector`, `move64ToDouble`, `move32ToFloat`) using broadcast and shuffle instructions, which are necessary for the SIMD regex paths and future SIMD optimizations.
+
+- [**`579b96614b75`**](https://github.com/oven-sh/WebKit/commit/579b96614b75) — SIMD fast prefix search for RegExp (ARM64)
+- [**`b7ed3dae4a6a`**](https://github.com/oven-sh/WebKit/commit/b7ed3dae4a6a) — SIMD fast prefix search for RegExp (x86_64)
+- [**`aa596dded063`**](https://github.com/oven-sh/WebKit/commit/aa596dded063) — x86_64 constant materialization for SIMD masks
+
+### [**RegExp JIT: Fixed-Count Parentheses**](https://bun.com/blog/bun-v1.3.9?ref=dailydev#regexp-jit-fixed-count-parentheses)
+
+Non-capturing parenthesized subpatterns with fixed-count quantifiers like `(?:abc){3}` previously fell back to the slower Yarr interpreter. They are now JIT-compiled using a counter-based loop, yielding a **~3.9x speedup** on affected patterns. A follow-up patch also added JIT support for fixed-count subpatterns **with capture groups** (e.g., `/(a+){2}b/`), correctly saving and restoring capture state across iterations.
+
+- [**`ac63cc259d74`**](https://github.com/oven-sh/WebKit/commit/ac63cc259d74) — JIT support for non-capturing fixed-count parentheses (~3.9x faster)
+- [**`c8b66aa0832b`**](https://github.com/oven-sh/WebKit/commit/c8b66aa0832b) — JIT support for fixed-count subpatterns with captures
+
+### [**`String#startsWith` Optimized in DFG/FTL**](https://bun.com/blog/bun-v1.3.9?ref=dailydev#string-startswith-optimized-in-dfg-ftl)
+
+`String.prototype.startsWith` is now an intrinsic in the DFG and FTL JIT tiers, with constant folding support when both the string and search term are known at compile time.
+
+| **Benchmark** | **Speedup** |
+| --- | --- |
+| `string-prototype-startswith` | **1.42x faster** |
+| `string-prototype-startswith-constant-folding` | **5.76x faster** |
+| `string-prototype-startswith-with-index` | **1.22x faster** |
+- [**`1f7d7d5a8c23`**](https://github.com/oven-sh/WebKit/commit/1f7d7d5a8c23)
+
+### [**`Set#size` and `Map#size` Optimized in DFG/FTL and Inline Caches**](https://bun.com/blog/bun-v1.3.9?ref=dailydev#set-size-and-map-size-optimized-in-dfg-ftl-and-inline-caches)
+
+The `.size` getter on `Set` and `Map` is now handled as an intrinsic in the DFG/FTL tiers and inline caches, eliminating the overhead of a generic getter call.
+
+| **Benchmark** | **Speedup** |
+| --- | --- |
+| `set-size` | **2.24x faster** |
+| `map-size` | **2.74x faster** |
+- [**`2e2c23521a24`**](https://github.com/oven-sh/WebKit/commit/2e2c23521a24)
+
+### [**`String#trim` Optimized**](https://bun.com/blog/bun-v1.3.9?ref=dailydev#string-trim-optimized)
+
+`String.prototype.trim`, `trimStart`, and `trimEnd` now use direct pointer access via `span8()`/`span16()` instead of indirect `str[i]` character access, avoiding repeated bounds checking.
+
+| **Benchmark** | **Speedup** |
+| --- | --- |
+| `string-trim` | **1.17x faster** |
+| `string-trim-end` | **1.42x faster** |
+| `string-trim-start` | **1.10x faster** |
+- [**`73a97d320d4b`**](https://github.com/oven-sh/WebKit/commit/73a97d320d4b)
+
+### [**`Object.defineProperty` Handled in DFG/FTL**](https://bun.com/blog/bun-v1.3.9?ref=dailydev#object-defineproperty-handled-in-dfg-ftl)
+
+`Object.defineProperty` is now recognized as an intrinsic in the DFG and FTL JIT tiers. While this patch alone doesn't change benchmark numbers, it lays the groundwork for future optimizations that can specialize based on descriptor shape.
+
+- [**`b1703ed2b97e`**](https://github.com/oven-sh/WebKit/commit/b1703ed2b97e)
+
+### [**`String.prototype.replace` Returns Ropes**](https://bun.com/blog/bun-v1.3.9?ref=dailydev#string-prototype-replace-returns-ropes)
+
+When using `"string".replace("search", "replacement")` with string arguments, JSC now constructs a rope (lazy concatenation) instead of eagerly copying the entire result. This avoids unnecessary allocations for the common case where the result is only used briefly. This aligns with V8's behavior.
+
+- [**`69162bbdb602`**](https://github.com/oven-sh/WebKit/commit/69162bbdb602)
+
+## [**Bugfixes**](https://bun.com/blog/bun-v1.3.9?ref=dailydev#bugfixes)
+
+### [**Node.js compatibility improvements**](https://bun.com/blog/bun-v1.3.9?ref=dailydev#node-js-compatibility-improvements)
+
+- Fixed: `existsSync('.')`, `statSync('.')`, and other `node:fs` operations incorrectly failing on Windows due to `'.'` being normalized to an empty string instead of the current directory.
+- Fixed: `Function.prototype.toString()` whitespace now matches V8/Node.js
+- Fixed 3 rare crashes in `node:http2`
+
+### [**Bun APIs**](https://bun.com/blog/bun-v1.3.9?ref=dailydev#bun-apis)
+
+- Fixed: `Bun.stringWidth` incorrectly reporting Thai SARA AA (`U+0E32`), SARA AM (`U+0E33`), and their Lao equivalents (`U+0EB2`, `U+0EB3`) as zero-width characters instead of width 1. These are spacing vowels, not combining marks, so common Thai words like `คำ` now correctly return a width of 2 instead of 1.
+
+### [**Web APIs**](https://bun.com/blog/bun-v1.3.9?ref=dailydev#web-apis)
+
+- Fixed: a crash that could occur in the `WebSocket` client when using `binaryType = "blob"` and receiving `"data"` events when no event listener attached.
+- Fixed: Sequential HTTP requests with proxy-style absolute URLs (e.g. `GET http://example.com/path HTTP/1.1`) hanging on the 2nd+ request when using keep-alive connections. This affected HTTP proxy servers built with Bun, which could only handle one request per connection.
+- Fixed: A security issue in the HTTP server chunked encoding parser that could lead to request smuggling.
+
+
+### [**TypeScript types**](https://bun.com/blog/bun-v1.3.9?ref=dailydev#typescript-types)
+
+- Fixed: `Bun.Build.CompileTarget` TypeScript type was missing SIMD variants like `bun-linux-x64-modern`, causing type errors when cross-compiling with specific architecture targets.
+- Fixed: Missing `bun-linux-x64-baseline` and `bun-linux-x64-modern` compile target types in TypeScript definitions, which caused type errors when using `Bun.build()` with these valid targets.
+- Fixed: `Socket.reload()` TypeScript types now correctly expect `{ socket: handler }` to match runtime behavior, which requires the handler to be wrapped in a `socket` property.
+```
+
+Diatas adalah update terbaru dari Bun, tapi saya tidak ingin menaruh code atau command apapun, hanya pure informasi update dan pendapat pribadi saja.
+Saya juga ingin untuk tidak ada Good Evening dan gunakan struktur post agar tidak monoton dengan caption post-post sebelumnya agar terlihat lebih fresh.
+Saya juga ingin awal post nya di awali agar terlihat saya baru saja membaca update Bun v1.3.9
+Dan buat lebih human dan lebih menarik tanpa ada call-to-action.
+
+[ASSISTANT]
+I just finished reading the Bun v1.3.9 update — and this one feels less like a minor bump, more like quiet, serious progress.
+
+What I appreciate about this release is that it’s not just “faster runtime” marketing. It’s small, practical improvements that actually matter when you’re building and maintaining real systems.
+
+A few things that stood out to me:
+
+First, script orchestration got better. Running multiple package scripts in parallel or sequentially across workspaces sounds simple, but in monorepos this kind of ergonomics makes daily workflows cleaner. Less glue tooling, more native support.
+
+Second, there’s noticeable attention to performance at the engine level. SIMD acceleration for RegExp, multiple JIT optimizations (`startsWith`, `Set#size`, `Map#size`, `trim`, etc.), and even rope-based string handling for `replace`. These aren’t flashy features — they’re deep runtime improvements. The kind that compound over time.
+
+Markdown rendering also got faster (3–15% in some cases), React markdown rendering reduced string allocations significantly, and even `AbortSignal.abort()` got a measurable micro-benchmark improvement. It’s interesting how much care is going into seemingly small hotspots.
+
+On the compatibility side, more Node.js edge cases are being ironed out, including Windows filesystem quirks and http2 crash fixes. That’s the unglamorous work that builds trust.
+
+There’s also infrastructure-level fixes like resolving ARMv8.0 crashes and better handling of proxy rules with `NO_PROXY`. These are the kinds of details you only notice when they break — so seeing them addressed is reassuring.
+
+Overall, what I see in v1.3.9 isn’t hype. It’s maturity.
+
+Bun continues to move in two directions at once:
+- Improving developer experience (script orchestration, testing ergonomics)
+- Investing heavily in low-level engine performance and correctness
+
+That combination is rare.
+
+It’ll be interesting to watch how this pace of incremental but meaningful improvements shapes the broader JS runtime landscape over the next year.
+
+[USER]
+Sekarang buatkan caption linkedin untuk blog dibawah ini:
+
+```md
+# **Why AI is pushing developers toward typed languages**
+
+It’s a tale as old as time: tabs vs. spaces, dark mode vs. light mode, typed languages vs. untyped languages. [It all depends](https://www.youtube.com/watch?v=aMWh2uLO9OM)!
+
+But as developers use AI tools, not only are they choosing the more popular (thus more trained into the model) libraries and languages, they are also using tools that reduce risk. When code comes not just from developers, but also from their AI tools, reliability becomes a much bigger part of the equation.
+
+# **Typed vs. untyped**
+
+Dynamic languages like Python and JavaScript make it easy to move quickly when building, and developers who argue for those languages push for the speed and flexibility they provide. But that agility lacks the safety net you get with typed languages.
+
+Untyped code is not gone, and can still be great. I love, personally, that I can just write code and not define every aspect of something on my average side project. But, when you don’t control every line of code, subtle errors can pass, unchecked. That’s when the types-driven safety net concept becomes a lot more appealing, and even necessary. AI just increases the volume of “code you didn’t personally write,” which raises the stakes.
+
+Type systems fill a unique role of surfacing ambiguous logic and mismatches of expected inputs and outputs. They ensure that code from any source can conform to project standards. They’ve basically become a shared contract between developers, frameworks, and AI tools that are generating more and more scaffolding and boilerplate for developers.
+
+With AI tools and agents producing larger volumes of code and features than ever, it only makes sense that reliability is more critical. And… that is where typed languages win the debate. Not because untyped languages are “bad,” but because types catch the exact class of surprises that AI-generated code can sometimes introduce.
+
+# **Is type safety that big of a deal?**
+
+Yes!
+
+Next question.
+
+But actually though, a 2025 academic study found that [a whopping 94% of LLM-generated compilation errors were type-check failures](https://arxiv.org/pdf/2504.09246). Imagine how much your projects would improve if 94% of your failures went away! Your life would be better. Your skin would clear. You’d get taller. Or at least you’d have fewer “why does this return a string now?” debugging sessions.
+
+# **What Octoverse 2025 says about the rise of typed languages**
+
+[Octoverse 2025](https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/) confirmed it: TypeScript is now the most used language on GitHub, overtaking *both* Python and JavaScript as of August 2025. TypeScript grew by over 1 million contributors in 2025 (+66% YoY, Aug ‘25 vs. Aug ‘24) with an estimated 2.6 million developers total. This was driven, in part, by frameworks that scaffold projects in TypeScript by default (like Astro, Next.js, and Angular). But the report also found correlative evidence that TypeScript’s rise got a boost from AI-assisted development.
+
+That means AI is influencing not only how fast code is written, but which languages and tools developers use. And typed ecosystems are benefiting too, because they help AI slot new code into existing projects without breaking assumptions.
+
+# **It’s not just TypeScript. Other typed languages are growing fast, too!**
+
+Luau, Roblox’s scripting language, saw >194% YoY growth as a [gradually typed](https://en.wikipedia.org/wiki/Gradual_typing) language. Typst, often compared to LaTeX, but with functional design and strong typing, saw >108% YoY growth. Even older languages like Java, C++, and C# saw more growth than ever in this year’s report.
+
+That means gradual typing, optional typing, and strong typing are all seeing momentum—and each offers different levels of guardrails depending on what you’re building and how much you want AI to automate.
+
+# **Where do we go from here?**
+
+Type systems don’t replace dynamic languages. But, they have become a common safety feature for developers working with and alongside AI coding tools for a reason. As we see AI-assisted development and agent development increase in popularity, we can expect type systems to become even more central to how we build and ship reliable software.
+
+Static types help ensure that code is more trustworthy and more maintainable. They give developers a shared, predictable structure. That reduction in surprises means you can be in the flow ([pun intended](https://flow.org/)!) more.
+```
+
+Sekarang saya ingin kalimat pembuka nya itu bisa menarik pembaca tapi tetap buat agar terlihat sangat natural.
+Saya juga ingin menaruh pendapat pribadi mengenai blog tapi tetap masukkan semua informasi yang ada dari blog itu tanpa ada yang terlewat.
+Buat agar lebih se-manusia mungkin, dan struktur post nya itu tidak monoton tapi tetap jelas.
+Saya juga ingin menaruh link youtube nya https://youtu.be/MQOaBXwRfYo
+
+[ASSISTANT]
+A small thing I’ve been noticing lately:  
+the more we use AI to write code, the more we start caring about types.
+
+Not because typed vs. untyped suddenly became a new debate (it’s been around forever — like tabs vs spaces), but because the context has changed. We’re no longer the only ones writing the code.
+
+This blog made an interesting point: as AI tools generate more scaffolding, boilerplate, and even features, reliability becomes a bigger part of the equation. When part of your codebase comes from a model, subtle mismatches matter more.
+
+Dynamic languages like Python and JavaScript still make it incredibly easy to move fast. I personally enjoy that flexibility for small projects. Just write the logic and move on. No ceremony.
+
+But when you don’t control every line of code anymore — because AI is helping — that flexibility comes with more risk.
+
+Type systems act like a contract. They surface ambiguous logic. They catch mismatched inputs and outputs. They force alignment between what you think something returns and what it actually returns. In a world where AI increases the volume of “code you didn’t personally write,” that safety net becomes much more appealing.
+
+And there’s data behind this.
+
+A 2025 academic study found that **94% of LLM-generated compilation errors were type-check failures**. That number alone explains a lot. If most AI-related compile errors are type issues, then stronger type systems directly reduce friction.
+
+GitHub’s Octoverse 2025 report also confirmed something big:  
+**TypeScript became the most used language on GitHub as of August 2025**, overtaking both Python and JavaScript. It grew by over 1 million contributors in 2025 (+66% YoY), reaching an estimated 2.6 million developers.
+
+Framework defaults (Next.js, Astro, Angular) played a role. But the report also found correlative evidence that AI-assisted development helped boost TypeScript’s growth.
+
+And it’s not just TypeScript.
+
+Luau (Roblox’s gradually typed language) saw >194% YoY growth.  
+Typst (a strongly typed LaTeX alternative) grew >108% YoY.  
+Even Java, C++, and C# saw stronger growth this year.
+
+Gradual typing. Optional typing. Strong typing.  
+Different guardrails — same direction.
+
+Personally, I don’t see this as “typed languages winning” and dynamic languages losing. I see it as systems adapting to new risk.
+
+If AI is going to generate more of our code, we need stronger guarantees around what that code is allowed to do.
+
+Types don’t make software perfect.  
+But they make assumptions explicit.
+
+And when assumptions are explicit, AI has fewer places to silently break things.
+
+If you’re curious about the broader conversation around typed vs untyped, this discussion is also worth watching:  
+https://youtu.be/MQOaBXwRfYo
+
+We’re not just choosing languages anymore.  
+We’re choosing how much safety we want in an AI-assisted world.
+
+[USER]
+Buat ulang caption nya tapi jangan merujuk ke blog manapun.
+
+[ASSISTANT]
+I’ve been thinking about this lately:
+
+AI might be unintentionally pushing us toward typed languages.
+
+Not because typed vs. untyped is a new debate (it’s been around forever), but because the environment has changed. We’re no longer the only ones writing the code.
+
+When AI tools generate scaffolding, boilerplate, and even full features, reliability starts to matter more than raw speed. The equation shifts. It’s not just “can I ship fast?” but also “can I trust what was just generated?”
+
+Dynamic languages like Python and JavaScript are still incredibly powerful. I genuinely enjoy the freedom of just writing code without defining every type upfront — especially for side projects.
+
+But here’s the thing: AI increases the volume of code you didn’t personally write.
+
+And that changes the risk profile.
+
+Type systems act like contracts. They expose mismatches between expected inputs and outputs. They surface ambiguous logic early. They force assumptions to be explicit. In a collaborative environment — where “collaborator” now includes AI — that contract becomes more valuable.
+
+There’s also data backing this up.
+
+A 2025 academic study found that **94% of LLM-generated compilation errors were type-check failures**. That’s not a small number. If most generated compile errors are type-related, stronger type systems directly reduce friction.
+
+We’re also seeing ecosystem shifts.
+
+As of August 2025, **TypeScript became the most used language on GitHub**, overtaking both Python and JavaScript. It grew by over 1 million contributors in 2025 (+66% YoY), reaching around 2.6 million developers. Framework defaults like Next.js, Astro, and Angular contributed — but there’s also correlative evidence that AI-assisted development played a role.
+
+And it’s not just TypeScript.
+
+Luau (a gradually typed language) saw >194% YoY growth.  
+Typst grew >108% YoY.  
+Even Java, C++, and C# saw stronger growth this year.
+
+Gradual typing. Optional typing. Strong typing.  
+Different philosophies, same direction: more guardrails.
+
+Personally, I don’t see this as dynamic languages losing. I see it as teams adjusting to a world where more code is machine-generated.
+
+If AI is going to help write larger portions of our systems, then having stricter contracts around behavior feels less like preference — and more like risk management.
+
+Types don’t make software perfect.  
+But they make assumptions visible.
+
+And in an AI-assisted workflow, visible assumptions are everything.
+
+[USER]
+Sekarang buatkan caption untuk post linkedin saya yang dimana saya ingin post mengenai project sederhana yang saya buat dan berikut README.md nya agar anda bisa lebih mengerti mengenai project saya.
+
+```md
+# Dev-Memory — Project Context
+
+`dev-memory` adalah CLI tool berbasis Python (standard library only) untuk mengotomasi _daily standup / dev log_ dari aktivitas Git di beberapa repository. Tool ini menghasilkan output harian & bulanan dalam format JSON + Markdown (Bahasa Indonesia), opsional ditambah narasi AI, dan (opsional) mengirimkan hasil daily standup ke Discord.
+
+Dokumen ini berisi gambaran lengkap cara kerja, fitur, struktur file, environment variables, alur eksekusi (cron + startup recovery), dan cara troubleshooting. Cocok untuk diberikan ke AI lain sebagai konteks proyek.
+
+---
+
+## 1) Tujuan Utama
+
+- Mengumpulkan aktivitas development harian (commit + working tree) dari beberapa repo Git.
+- Menyimpan data harian (JSON) dan ringkasan harian (Markdown) secara deterministik.
+- Menghasilkan ringkasan bulanan dari kumpulan laporan harian.
+- (Opsional) Menambahkan narasi AI di layer presentasi (tanpa mempengaruhi data JSON).
+- Otomatis berjalan setiap hari via cron (06:00) + fallback saat laptop/device OFF.
+- (Opsional) Mengirim Markdown daily standup ke Discord dengan retry + logging.
+
+---
+
+## 2) Gambaran Arsitektur (Layered)
+
+Proyek ini menjaga pemisahan concern agar reliabel dan mudah diobservasi:
+
+1.  **Data Aggregation Layer (pure data)**
+    - Mengambil data dari Git dan membentuk model data.
+    - Tidak ada AI.
+    - Tidak ada logic presentasi.
+
+2.  **Analyzer Layer (rule-based)**
+    - Klasifikasi aktivitas secara deterministik (heuristic / rule-based).
+    - Tidak ada AI.
+
+3.  **Presentation Layer (Markdown generator)**
+    - Mengubah data menjadi Markdown Bahasa Indonesia.
+    - Boleh menambah narasi AI (opsional) tetapi tidak mengubah data JSON.
+
+4.  **Execution / Scheduling Layer**
+    - Cron job + startup recovery + idempotency.
+    - Logging dan metrik durasi.
+
+5.  **Notification Layer (Discord)**
+    - Terpisah dari aggregator.
+    - Jika error tidak boleh menggagalkan cron/job.
+
+---
+
+## 3) Struktur Folder & Output
+
+### Output harian
+
+- **Daily JSON**: `data/daily/YYYY-MM-DD.json`
+- **Daily Markdown**: `data/daily/YYYY-MM-DD.md`
+
+### Output bulanan
+
+- **Monthly JSON**: `data/monthly/YYYY-MM.json`
+- **Monthly Markdown**: `data/monthly/YYYY-MM.md`
+
+### State & logs
+
+- **Execution state**: `data/state.json`
+  - contoh:
+    - `{ "last_daily_execution": "2026-02-12" }`
+- **Cron log per hari**: `logs/cron-YYYY-MM-DD.log`
+- **Discord log**: `logs/discord.log`
+
+---
+
+## 4) Time Window (Cut-off 06:00) + Monday Rule
+
+Collector menggunakan parameter waktu untuk `git log`:
+
+`git log --since="YYYY-MM-DD HH:MM" --until="YYYY-MM-DD HH:MM"`
+
+### Default (hari biasa)
+
+Window harian:
+
+- **Start**: 06:00 “hari sebelumnya”
+- **End**: 05:59 “hari ini”
+
+Contoh:
+
+Jika hari ini `2026-02-13` (Jumat), collect:
+
+- `2026-02-12 06:00 → 2026-02-13 05:59`
+
+### Monday special rule
+
+Jika hari ini **Senin**, collect:
+
+- `Jumat 06:00 → Senin 05:59`
+
+Tujuan:
+
+- Aktivitas larut malam (00:00–05:59) masuk ke “hari sebelumnya”.
+- Senin merangkum weekend (Jumat-Sabtu-Minggu sampai Senin pagi sebelum 06:00).
+
+Label file output harian tetap menggunakan `YYYY-MM-DD` = “hari sebelumnya” (contoh: Senin menghasilkan label Minggu).
+
+---
+
+## 5) Data yang Dikumpulkan (Daily)
+
+Collector membaca beberapa repo (paths di `config.py`) dan menghasilkan `DailyReport` (lihat `models.py`).
+
+Ringkasan yang dikumpulkan per repo:
+
+- **Committed summary**
+  - `commits_count`
+  - `files_changed`, `insertions`, `deletions`
+  - `commit_messages`
+  - `commit_details`:
+    - `hash`, `message`, `files` (list path file yang berubah)
+
+- **Working state**
+  - `modified_files`, `untracked_files`
+  - insertions/deletions dari:
+    - `git diff --shortstat`
+    - `git diff --cached --shortstat`
+
+Analyzer (`analyzer.py`) menambahkan:
+
+- `activity_type` (rule-based) per repo.
+
+---
+
+## 6) Markdown Daily (Bahasa Indonesia)
+
+`summarizer.py` menghasilkan Markdown daily yang berisi:
+
+- Judul laporan
+- Ringkasan per repo
+- Bullet deskriptif dari `commit_details` (deterministik, tidak mengarang)
+- Section standup:
+  - Hari ini
+  - Hambatan
+
+### AI Narrative (opsional)
+
+Jika flag `--ai` dipakai, Markdown akan ditambah:
+
+- `## Ringkasan Naratif AI`
+
+AI hanya presentational layer; jika AI gagal, report tetap dibuat (fail-safe).
+
+---
+
+## 7) Monthly Aggregation
+
+`monthly.py` membaca semua daily JSON dalam bulan tertentu (`YYYY-MM`) lalu membuat:
+
+- monthly aggregated JSON
+- monthly Markdown Bahasa Indonesia
+- insight produktivitas rule-based
+
+Monthly bisa dijalankan manual:
+
+```bash
+python3 main.py --monthly 2026-02
+python3 main.py --monthly 2026-02 --ai
+```
+
+Monthly juga bisa otomatis dijalankan oleh `run_daily.py` pada “first weekday” awal bulan.
+
+---
+
+## 8) Cara Pakai (CLI)
+
+Entry point: `main.py`
+
+### Generate daily
+
+```bash
+python3 main.py
+python3 main.py --ai
+```
+
+### Generate monthly
+
+```bash
+python3 main.py --monthly YYYY-MM
+python3 main.py --monthly YYYY-MM --ai
+```
+
+### Install/remove cron
+
+```bash
+python3 main.py --install-cron
+python3 main.py --remove-cron
+```
+
+### Install/remove startup hook (Linux autostart)
+
+```bash
+python3 main.py --install-startup
+python3 main.py --remove-startup
+```
+
+---
+
+## 9) Cron + Startup Recovery (Missed Execution)
+
+### Masalah
+
+Cron tidak berjalan jika device OFF / sleep / hibernate.
+
+### Solusi
+
+1.  **Cron tetap trigger utama**
+    - schedule: `0 6 * * 1-5 run_daily.py`
+
+2.  **Startup recovery sebagai fallback**
+    - Linux autostart file:
+      - `~/.config/autostart/dev-memory.desktop`
+    - menjalankan `run_on_startup.py` saat login
+
+3.  **State tracking** untuk mencegah duplicate
+    - `data/state.json`
+
+### Idempotency (run_daily.py)
+
+Sebelum generate:
+
+- hitung `report_date` (logical report date)
+- jika state menunjukkan sudah executed untuk tanggal itu → exit
+- jika file `data/daily/<report_date>.json` sudah ada → exit (dan sinkronkan state)
+
+Setelah daily sukses:
+
+- update `data/state.json`
+
+### run_on_startup.py
+
+- Jika startup terjadi **setelah 06:00** dan report untuk `report_date` belum dibuat → jalankan `run_daily.py`.
+- Jika recovery gagal → state tidak di-update.
+
+---
+
+## 10) Logging & Observability
+
+### Logger utama (cron log per hari)
+
+`logger.py` menulis ke:
+
+- `logs/cron-YYYY-MM-DD.log`
+
+Format:
+
+- `[timestamp] [level] [module] message`
+
+`run_daily.py` mencatat:
+
+- start/end
+- Python version + working directory
+- time window
+- durasi daily/monthly/total
+- status Discord delivery
+
+### Logger Discord (terpisah)
+
+`discord/discord_client.py` menulis detail ke:
+
+- `logs/discord.log`
+
+Yang dicatat:
+
+- HTTP status code
+- latency (ms)
+- retry count
+- rate limit (429 + retry_after)
+- error body preview
+
+---
+
+## 11) Discord Notification Layer
+
+Tujuan: kirim daily standup ke Discord channel tanpa mengganggu cron.
+
+Modul:
+
+- `discord/discord_client.py`
+  - HTTP client via `urllib`
+  - retry 1x (default) + delay 5 detik
+  - rate-limit aware (429 → tunggu `retry_after` → retry 1x)
+  - support message biasa atau attachment `.md` (multipart)
+  - mendukung mention user via `DISCORD_USER_ID`
+  - menggunakan `allowed_mentions` supaya mention benar-benar ping
+  - membaca env dari OS dan fallback ke file `.env`
+
+- `discord/send_report.py`
+  - validasi markdown exists & non-empty
+  - jika konten markdown > 1800 chars → kirim attachment
+  - jika <= 1800 chars → kirim message dengan code block
+  - follow-up message setelah sukses:
+    - `✅ Daily Standup berhasil dibuat dan dikirim pada {timestamp}`
+
+Integrasi:
+
+- `run_daily.py` memanggil `send_daily_standup()` setelah daily sukses dibuat.
+- Jika Discord gagal → log warning/error, proses tetap sukses.
+
+---
+
+## 12) Environment Variables (.env)
+
+`.env` berada di project root. Credentials tidak di-hardcode.
+
+### AI
+
+- `GEMINI_API_KEY` (opsional)
+- `GEMINI_MODEL` (opsional)
+- atau generic:
+  - `LLM_API_URL`
+  - `LLM_API_KEY`
+  - `LLM_MODEL`
+
+### Discord
+
+- `DISCORD_BOT_TOKEN`
+- `DISCORD_CHANNEL_ID`
+- `DISCORD_USER_ID` (optional, untuk mention/ping)
+
+---
+
+## 13) Quick Troubleshooting
+
+### Daily report tidak terbentuk
+
+- Cek `logs/cron-YYYY-MM-DD.log`
+- Pastikan repo paths valid dan repo adalah git repo.
+
+### Cron tidak jalan
+
+- Device OFF/sleep: mengandalkan startup recovery (`run_on_startup.py`).
+- Cek crontab: `crontab -l | grep dev-memory`
+
+### Discord tidak terkirim
+
+- Cek `logs/discord.log`
+- Kemungkinan:
+  - `401` token salah
+  - `403` permission bot kurang (Send Messages / Attach Files)
+  - `404` channel id salah atau bot tidak bisa akses
+  - `429` rate limit (harusnya auto retry)
+
+### AI error
+
+- AI failure tidak memblok data.
+- Report tetap dibuat.
+
+---
+
+## 14) Testing
+
+Test suite menggunakan `unittest`.
+
+Run:
+
+```bash
+python3 -m unittest -q
+```
+
+Test coverage mencakup:
+
+- date range logic (06:00 + Monday rule)
+- run_daily behavior
+- scheduler idempotency
+- Discord delivery (mock): missing token, retry, rate limit, empty file
+```
+
+Sekarang buatkan caption post linkedin mengenai project saya.
+Saya ingin caption nya dimulai dari seperti bertanya `Apakah diantara kalian ada software engineer yang kantor atau tempat kerja nya itu menggunakan agile atau scrum dan kalian setiap pagi itu harus melakukan daily standup tapi lupa apa saja yang kalian kerjakan? sama aku juga, makanya aku buat tools ini ...`
+Kurang lebih seperti itu tapi buat lebih menarik dan lebih human, punchy
+Highlight kelebihan-kelebihan fitur nya dan buat agar project saya ini terlihat menarik!
+Dan saya juga ingin menaruh dimana saya hanya perlu menjalankan cron job nya dan setiap kali saya melakukan commit maka akan membaca git log dan akan membuatkan daftar apa saja yang saya coding kemarin dan seterusnya.
+Tapi tidak perlu menaruh command atau contoh code apapun.
+Tidak perlu ada call-to-action nya.
+
+[ASSISTANT]
+Apakah di antara kalian ada software engineer yang kantornya pakai Agile / Scrum, tiap pagi harus daily standup… tapi pas ditanya “kemarin ngerjain apa?” otaknya nge-freeze?  
+
+Sama. 😅  
+
+Bukan karena nggak kerja. Tapi karena context switching, multiple repo, bug kecil sana-sini, refactor dikit, commit banyak — dan semuanya keburu blur keesokan harinya.
+
+Makanya saya bikin **Dev-Memory**.
+
+Ini tool sederhana berbasis Python (standard library only) yang otomatis membaca aktivitas Git saya, lalu setiap pagi menghasilkan daily dev log dalam bentuk JSON dan Markdown (Bahasa Indonesia). Jadi saya nggak perlu lagi mengandalkan ingatan.
+
+Cara kerjanya simpel secara konsep:
+- Saya set cron job sekali.
+- Setiap kali saya commit seperti biasa.
+- Pagi hari, tool ini membaca git log + working tree dari beberapa repo.
+- Lalu dia generate laporan harian yang rapi, deterministik, dan bisa langsung dipakai untuk standup.
+
+Beberapa hal yang saya sengaja desain dengan serius:
+
+🔹 **Time window yang realistis (cut-off 06:00 + Monday rule)**  
+Commit tengah malam tetap masuk ke “hari sebelumnya”. Hari Senin otomatis merangkum aktivitas weekend.
+
+🔹 **Layered architecture**  
+Data aggregation terpisah dari analyzer, presentasi, dan notifikasi. AI (kalau dipakai) hanya ada di layer narasi, tidak pernah menyentuh data JSON. Jadi tetap deterministic dan bisa diaudit.
+
+🔹 **Idempotent & recovery-aware**  
+Kalau laptop mati saat jam cron, ada startup recovery.  
+Tidak ada duplicate report. State tracking aman.
+
+🔹 **Monthly aggregation otomatis**  
+Semua daily report bisa dirangkum jadi insight bulanan berbasis rule, bukan sekadar rekap jumlah commit.
+
+🔹 **Discord integration (opsional)**  
+Laporan bisa langsung dikirim ke channel, lengkap dengan retry, rate limit handling, logging terpisah, dan tidak pernah menggagalkan proses utama kalau gagal.
+
+🔹 **Observability & logging serius**  
+Durasi eksekusi, window waktu, status notifikasi — semua tercatat. Kalau ada yang error, jelas sumbernya.
+
+Yang menarik buat saya pribadi bukan cuma “auto standup”, tapi ini jadi semacam personal engineering memory. Saya bisa lihat pola kerja, repo mana yang paling aktif, kapan banyak refactor, kapan lebih banyak maintenance.
+
+Dan yang paling penting:  
+Daily standup jadi objektif. Bukan berdasarkan ingatan, tapi berdasarkan fakta Git.
+
+Simple project.  
+Tapi surprisingly useful buat workflow sehari-hari.
