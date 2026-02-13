@@ -9,14 +9,16 @@ try:
     from .extractor import ExtractError, extract_conversation_state
     from .fetcher import FetchError, fetch_html
     from .rebuilder import RebuildError, rebuild_messages
-    from .archive_builder import ArchiveBuildError, build_archive_from_file
+    from .archive_builder import ArchiveBuildError, build_archive, build_archive_from_file
+    from .storage import StorageError, store_archive
 except ImportError:  # Allows `python3 chat_distiller/cli.py ...` from repo root or package dir
     _pkg_parent = Path(__file__).resolve().parent.parent
     sys.path.insert(0, str(_pkg_parent))
     from chat_distiller.extractor import ExtractError, extract_conversation_state
     from chat_distiller.fetcher import FetchError, fetch_html
     from chat_distiller.rebuilder import RebuildError, rebuild_messages
-    from chat_distiller.archive_builder import ArchiveBuildError, build_archive_from_file
+    from chat_distiller.archive_builder import ArchiveBuildError, build_archive, build_archive_from_file
+    from chat_distiller.storage import StorageError, store_archive
 
 
 def _parse_args(argv: list[str]) -> argparse.Namespace:
@@ -36,6 +38,11 @@ def _parse_args(argv: list[str]) -> argparse.Namespace:
         "--archive",
         action="store_true",
         help="Build deterministic conversation archive JSON (Phase 2)",
+    )
+    p.add_argument(
+        "--store",
+        action="store_true",
+        help="Store per-chat archive + metadata into data/<chat_title>/ (Phase 3)",
     )
     p.add_argument(
         "--tail",
@@ -64,6 +71,68 @@ def main(argv: list[str] | None = None) -> int:
             print(str(e), file=sys.stderr)
             return 6
         print(f"Wrote archive JSON to {Path(args.output)}")
+        return 0
+
+    if args.store:
+        if not args.url:
+            print("--store requires --url <share_link>", file=sys.stderr)
+            return 2
+
+        try:
+            html = fetch_html(args.url)
+        except FetchError as e:
+            print(str(e), file=sys.stderr)
+            return 2
+
+        try:
+            mapping, current_node = extract_conversation_state(html)
+        except ExtractError as e:
+            if args.debug_html:
+                try:
+                    Path(args.debug_html).write_text(html, encoding="utf-8")
+                except OSError:
+                    pass
+
+            print(f"Extraction failed: {e}", file=sys.stderr)
+            print(
+                "Tip: re-run with --debug-html <file.html> to inspect the fetched page",
+                file=sys.stderr,
+            )
+            return 3
+
+        try:
+            messages = rebuild_messages(mapping, current_node)
+        except RebuildError as e:
+            print(f"Rebuild failed: {e}", file=sys.stderr)
+            return 4
+
+        if args.tail is not None:
+            if args.tail < 0:
+                print("Invalid --tail: must be >= 0", file=sys.stderr)
+                return 2
+            if args.tail == 0:
+                messages = []
+            else:
+                messages = messages[-args.tail :]
+
+        try:
+            archive = build_archive(messages)
+        except ArchiveBuildError as e:
+            print(str(e), file=sys.stderr)
+            return 6
+
+        try:
+            stored_dir = store_archive(
+                share_url=args.url,
+                html=html,
+                archive=archive,
+                message_count=int(archive.get("meta", {}).get("total_messages", len(messages))),
+            )
+        except StorageError as e:
+            print(str(e), file=sys.stderr)
+            return 7
+
+        print(str(stored_dir))
         return 0
 
     if not args.url:
