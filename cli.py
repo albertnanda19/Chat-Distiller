@@ -9,14 +9,14 @@ try:
     from .extractor import ExtractError, extract_conversation_state
     from .fetcher import FetchError, fetch_html
     from .rebuilder import RebuildError, rebuild_messages
-    from .compiler import CompileError, compile_context
+    from .compiler import CompileError, compile_context, generate_markdown_snapshot
 except ImportError:  # Allows `python3 chat_distiller/cli.py ...` from repo root or package dir
     _pkg_parent = Path(__file__).resolve().parent.parent
     sys.path.insert(0, str(_pkg_parent))
     from chat_distiller.extractor import ExtractError, extract_conversation_state
     from chat_distiller.fetcher import FetchError, fetch_html
     from chat_distiller.rebuilder import RebuildError, rebuild_messages
-    from chat_distiller.compiler import CompileError, compile_context
+    from chat_distiller.compiler import CompileError, compile_context, generate_markdown_snapshot
 
 
 def _parse_args(argv: list[str]) -> argparse.Namespace:
@@ -31,6 +31,11 @@ def _parse_args(argv: list[str]) -> argparse.Namespace:
         "--extract-context",
         action="store_true",
         help="Extract structured technical context using Gemini (Phase 2)",
+    )
+    p.add_argument(
+        "--markdown",
+        action="store_true",
+        help="When used with --extract-context, output Markdown snapshot (Phase 3)",
     )
     p.add_argument(
         "--tail",
@@ -83,25 +88,56 @@ def main(argv: list[str] | None = None) -> int:
         else:
             messages = messages[-args.tail :]
 
-    output_obj: object
+    if args.markdown and not args.extract_context:
+        print("--markdown requires --extract-context", file=sys.stderr)
+        return 2
+
     if args.extract_context:
         try:
-            output_obj = compile_context(messages)
+            structured = compile_context(messages)
         except CompileError as e:
             print(str(e), file=sys.stderr)
             return 6
-    else:
-        output_obj = messages
+
+        if args.markdown:
+            out_path = Path(args.output)
+            if args.output == "messages.json":
+                out_path = Path("snapshot.md")
+            try:
+                md = generate_markdown_snapshot(structured)
+            except Exception as e:
+                print(f"Failed to generate markdown: {e}", file=sys.stderr)
+                return 7
+            try:
+                out_path.write_text(md, encoding="utf-8")
+            except OSError as e:
+                print(f"Failed to write markdown: {e}", file=sys.stderr)
+                return 5
+            print(f"Wrote markdown snapshot to {out_path}")
+            return 0
+
+        out_path = Path(args.output)
+        try:
+            out_path.write_text(
+                json.dumps(structured, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+        except OSError as e:
+            print(f"Failed to write output JSON: {e}", file=sys.stderr)
+            return 5
+        print(f"Wrote structured context JSON to {out_path}")
+        return 0
 
     out_path = Path(args.output)
     try:
         out_path.write_text(
-            json.dumps(output_obj, ensure_ascii=False, indent=2) + "\n",
+            json.dumps(messages, ensure_ascii=False, indent=2) + "\n",
             encoding="utf-8",
         )
     except OSError as e:
         print(f"Failed to write output JSON: {e}", file=sys.stderr)
         return 5
+    print(f"Wrote normalized messages JSON to {out_path}")
 
     return 0
 

@@ -281,6 +281,97 @@ def _merge_contexts(contexts: list[dict[str, Any]]) -> dict[str, Any]:
     return merged
 
 
+def generate_markdown_snapshot(structured_context: dict) -> str:
+    ctx = _validate_context(structured_context)
+
+    def _dedupe_clean(items: list[str]) -> list[str]:
+        cleaned = [x.strip() for x in items if isinstance(x, str) and x.strip()]
+        return _dedupe(cleaned)
+
+    def _section_text(title: str, value: str) -> str:
+        v = (value or "").strip()
+        if v:
+            return f"## {title}\n{v}\n\n"
+        return f"## {title}\n\n"
+
+    def _section_list(title: str, items: list[str]) -> str:
+        cleaned = _dedupe_clean(items)
+        out = [f"## {title}"]
+        if cleaned:
+            for x in cleaned:
+                out.append(f"- {x}")
+            out.append("")
+        else:
+            out.append("")
+        return "\n".join(out) + "\n"
+
+    parts: list[str] = ["# Project Context Snapshot\n\n"]
+
+    parts.append(_section_text("Project Summary", ctx["project_summary"]))
+    parts.append(_section_text("Core Objective", ctx["core_objective"]))
+    parts.append(_section_text("Architecture Overview", ctx["architecture_overview"]))
+
+    parts.append(_section_list("Tech Stack", ctx["tech_stack"]))
+    parts.append(_section_list("Key Decisions", ctx["key_decisions"]))
+    parts.append(_section_list("Constraints", ctx["constraints"]))
+    parts.append(_section_list("Assumptions", ctx["assumptions"]))
+    parts.append(_section_list("Open Problems", ctx["open_problems"]))
+    parts.append(_section_list("Risks", ctx["risks"]))
+
+    parts.append(_section_text("Current Focus", ctx["current_focus"]))
+    parts.append(_section_list("Next Steps", ctx["next_steps"]))
+
+    parts.append("## Bootstrap Prompt\n\n")
+    parts.append(generate_bootstrap_prompt(ctx).rstrip() + "\n")
+
+    return "\n".join(parts).rstrip() + "\n"
+
+
+def generate_bootstrap_prompt(structured_context: dict) -> str:
+    ctx = _validate_context(structured_context)
+
+    def _dedupe_clean(items: list[str]) -> list[str]:
+        cleaned = [x.strip() for x in items if isinstance(x, str) and x.strip()]
+        return _dedupe(cleaned)
+
+    lines: list[str] = []
+    lines.append("You are continuing development of the following project.")
+    lines.append("")
+    lines.append("Below is the current structured project state:")
+    lines.append("")
+
+    def _kv(key: str, value: str) -> None:
+        lines.append(f"{key}: {value.strip() if isinstance(value, str) else ''}")
+
+    def _klist(key: str, items: list[str]) -> None:
+        lines.append(f"{key}:")
+        for x in _dedupe_clean(items):
+            lines.append(f"- {x}")
+
+    _kv("project_summary", ctx["project_summary"])
+    _kv("core_objective", ctx["core_objective"])
+    _kv("architecture_overview", ctx["architecture_overview"])
+    _klist("tech_stack", ctx["tech_stack"])
+    _klist("key_decisions", ctx["key_decisions"])
+    _klist("constraints", ctx["constraints"])
+    _klist("assumptions", ctx["assumptions"])
+    _klist("open_problems", ctx["open_problems"])
+    _klist("risks", ctx["risks"])
+    _klist("todos", ctx["todos"])
+    _kv("current_focus", ctx["current_focus"])
+    _klist("next_steps", ctx["next_steps"])
+
+    lines.append("")
+    lines.append("Instructions:")
+    lines.append("- Do not re-explain basics.")
+    lines.append("- Assume all technical decisions listed are already accepted.")
+    lines.append("- Focus only on advancing the project.")
+    lines.append("- Be precise and technical.")
+    lines.append("- Avoid generic advice.")
+
+    return "\n".join(lines).rstrip() + "\n"
+
+
 def compile_context(
     messages: list[dict[str, str]],
     *,
