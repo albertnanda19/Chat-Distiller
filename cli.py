@@ -6,19 +6,18 @@ import sys
 from pathlib import Path
 
 try:
-    from .extractor import ExtractError, extract_conversation_state
-    from .fetcher import FetchError, fetch_html
-    from .rebuilder import RebuildError, rebuild_messages
-    from .archive_builder import ArchiveBuildError, build_archive, build_archive_from_file
-    from .storage import StorageError, store_archive
-except ImportError:  # Allows `python3 chat_distiller/cli.py ...` from repo root or package dir
-    _pkg_parent = Path(__file__).resolve().parent.parent
-    sys.path.insert(0, str(_pkg_parent))
-    from chat_distiller.extractor import ExtractError, extract_conversation_state
-    from chat_distiller.fetcher import FetchError, fetch_html
-    from chat_distiller.rebuilder import RebuildError, rebuild_messages
-    from chat_distiller.archive_builder import ArchiveBuildError, build_archive, build_archive_from_file
-    from chat_distiller.storage import StorageError, store_archive
+    from extractor import ExtractError, extract_conversation_state
+    from fetcher import FetchError, fetch_html
+    from rebuilder import RebuildError, rebuild_messages
+    from archive_builder import ArchiveBuildError, build_archive, build_archive_from_file
+    from storage import StorageError, store_archive
+except ImportError:
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from extractor import ExtractError, extract_conversation_state
+    from fetcher import FetchError, fetch_html
+    from rebuilder import RebuildError, rebuild_messages
+    from archive_builder import ArchiveBuildError, build_archive, build_archive_from_file
+    from storage import StorageError, store_archive
 
 
 def _parse_args(argv: list[str]) -> argparse.Namespace:
