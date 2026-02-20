@@ -90,11 +90,20 @@ def main(argv: list[str] | None = None) -> int:
             print("--merge requires --input-a <archive_a.json> and --input-b <archive_b.json>", file=sys.stderr)
             return 2
         try:
-            merge_archives_from_files(Path(args.input_a), Path(args.input_b), Path(args.output))
+            input_a = Path(args.input_a)
+            input_b = Path(args.input_b)
+
+            name_a = input_a.parent.name
+            name_b = input_b.parent.name
+            merged_dir = Path("data") / f"{name_a}__{name_b}"
+            merged_dir.mkdir(parents=True, exist_ok=True)
+            out_path = merged_dir / "archive.json"
+
+            merge_archives_from_files(input_a, input_b, out_path)
         except ArchiveBuildError as e:
             print(str(e), file=sys.stderr)
             return 6
-        print(f"Wrote merged archive JSON to {Path(args.output)}")
+        print(str(merged_dir))
         return 0
 
     if args.archive:
