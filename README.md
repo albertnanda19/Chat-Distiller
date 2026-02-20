@@ -2,30 +2,32 @@
 
 ## Running
 
-This repo is a single Python package directory named `chat_distiller/`.
-
-### Option A (recommended): run as a module from the parent directory
-
-From the directory that contains the `chat_distiller/` folder:
+Run the CLI directly from this directory:
 
 ```bash
-python3 -m chat_distiller.cli --archive --input chat_distiller/messages.json --output chat_distiller/archive.json
-python3 -m chat_distiller.cli --store --url "https://chatgpt.com/share/<share_id>"
+python3 cli.py --store --url "https://chatgpt.com/share/<share_id>"
+python3 cli.py --archive --input messages.json --output archive.json
 ```
 
-If you run `python3 -m chat_distiller.cli ...` from _inside_ the `chat_distiller/` directory, Python will fail with:
-
-`ModuleNotFoundError: No module named 'chat_distiller'`
-
-because `chat_distiller` must be importable as a package from the current working directory.
-
-### Option B: run the script directly from inside the package directory
-
-If your current directory is `chat_distiller/`:
+If you see `ModuleNotFoundError: No module named 'requests'`, install dependencies in the same environment:
 
 ```bash
-python3 cli.py --archive --input messages.json --output archive.json
-python3 cli.py --store --url "https://chatgpt.com/share/<share_id>"
+python3 -m pip install requests
+```
+
+### Merge two archives
+
+Merge two existing `archive.json` files (archive A first, then archive B) into a new deterministic merged archive.
+The merged file is saved as:
+
+`data/<folder_a>__<folder_b>/archive.json`
+
+and the command prints the merged directory path.
+
+```bash
+python3 cli.py --merge \
+  --input-a data/<folder_a>/archive.json \
+  --input-b data/<folder_b>/archive.json
 ```
 
 ### Note about `python` vs `python3`
