@@ -9,14 +9,24 @@ try:
     from extractor import ExtractError, extract_conversation_state
     from fetcher import FetchError, fetch_html
     from rebuilder import RebuildError, rebuild_messages
-    from archive_builder import ArchiveBuildError, build_archive, build_archive_from_file
+    from archive_builder import (
+        ArchiveBuildError,
+        build_archive,
+        build_archive_from_file,
+        merge_archives_from_files,
+    )
     from storage import StorageError, store_archive
 except ImportError:
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     from extractor import ExtractError, extract_conversation_state
     from fetcher import FetchError, fetch_html
     from rebuilder import RebuildError, rebuild_messages
-    from archive_builder import ArchiveBuildError, build_archive, build_archive_from_file
+    from archive_builder import (
+        ArchiveBuildError,
+        build_archive,
+        build_archive_from_file,
+        merge_archives_from_files,
+    )
     from storage import StorageError, store_archive
 
 
@@ -44,6 +54,21 @@ def _parse_args(argv: list[str]) -> argparse.Namespace:
         help="Store per-chat archive + metadata into data/<chat_title>/ (Phase 3)",
     )
     p.add_argument(
+        "--merge",
+        action="store_true",
+        help="Merge two archive.json files into a new merged archive.json",
+    )
+    p.add_argument(
+        "--input-a",
+        default=None,
+        help="First archive.json path (required with --merge)",
+    )
+    p.add_argument(
+        "--input-b",
+        default=None,
+        help="Second archive.json path (required with --merge)",
+    )
+    p.add_argument(
         "--tail",
         type=int,
         default=None,
@@ -59,6 +84,18 @@ def _parse_args(argv: list[str]) -> argparse.Namespace:
 
 def main(argv: list[str] | None = None) -> int:
     args = _parse_args(sys.argv[1:] if argv is None else argv)
+
+    if args.merge:
+        if not args.input_a or not args.input_b:
+            print("--merge requires --input-a <archive_a.json> and --input-b <archive_b.json>", file=sys.stderr)
+            return 2
+        try:
+            merge_archives_from_files(Path(args.input_a), Path(args.input_b), Path(args.output))
+        except ArchiveBuildError as e:
+            print(str(e), file=sys.stderr)
+            return 6
+        print(f"Wrote merged archive JSON to {Path(args.output)}")
+        return 0
 
     if args.archive:
         if not args.input:
